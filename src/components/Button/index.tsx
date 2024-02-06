@@ -1,4 +1,4 @@
-import { ButtonVariant } from "../../type";
+import { ButtonVariant } from "../../@types";
 import { Container } from "./style";
 
 interface IButtonProps {

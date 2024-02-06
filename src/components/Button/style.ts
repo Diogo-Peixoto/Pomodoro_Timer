@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ButtonVariant } from "../../type";
+import { ButtonVariant } from "../../@types";
 
 interface IButtonProps {
   variant: ButtonVariant;
