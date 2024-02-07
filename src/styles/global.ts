@@ -18,8 +18,15 @@ export const GlobalStyle = createGlobalStyle`
         font-size: 1rem;
     }
 
+    button::-moz-focus-inner,
+    input::-moz-focus-inner {
+        border: 0;
+        padding: 0;
+    }
+
     :focus{
         outline: 0;
         box-shadow: 0 0 0  2px ${({ theme }) => theme["gray-300"]};
     }
+    
 `;
