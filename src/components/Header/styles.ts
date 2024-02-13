@@ -1,25 +1,34 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const HeaderContainer = styled.header`
-  width: 100%;
-  padding-inline: 40px;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  img {
-    cursor: pointer;
-    max-width: 48px;
-  }
+  nav {
+    display: flex;
+    gap: 0.5rem;
 
-  a {
-    background-color: transparent;
-    border: none;
-    border-bottom: 3px solid transparent;
+    a {
+      width: 3rem;
+      height: 3rem;
 
-    &:hover {
-      border-bottom: 3px solid ${({ theme }) => theme["green-300"]};
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      color: ${(props) => props.theme['gray-100']};
+
+      border-top: 3px solid transparent;
+      border-bottom: 3px solid transparent;
+
+      &:hover {
+        border-bottom: 3px solid ${(props) => props.theme['green-500']};
+      }
+
+      &.active {
+        color: ${(props) => props.theme['green-500']};
+      }
     }
   }
-`;
+`

@@ -1,18 +1,14 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
-export const DefaultContainer = styled.div`
-  width: 100vw;
-  height: 100vh;
+export const LayoutContainer = styled.div`
+  max-width: 74rem;
+  height: calc(100vh - 10rem);
+  margin: 5rem auto;
+  padding: 2.5rem;
+
+  background: ${(props) => props.theme['gray-800']};
+  border-radius: 8px;
 
   display: flex;
-  align-items: center;
-  justify-content: center;
-`;
-
-export const MainContainerDefault = styled.div`
-  width: 77.8%;
-  height: 82.4%;
-  border-radius: 8px;
-  background-color: ${({ theme }) => theme["gray-800"]};
-  padding-block: 40px;
-`;
+  flex-direction: column;
+`
